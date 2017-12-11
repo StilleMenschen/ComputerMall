@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 分类按钮样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时 -->
+    <item android:drawable="@drawable/menu_red_32px" android:state_checked="true"/>
+    <!-- 未选中时 -->
+    <item android:drawable="@drawable/menu_32px" android:state_checked="false"/>
+
+</selector>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 商品详细信息界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fff" >
+
+        <!-- 返回按钮 -->
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:drawableStart="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/commodity_details"
+            android:textColor="#f00"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <!-- 一根灰色的横线 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+	<!-- 商品图片 -->
+    <ImageView
+        android:id="@+id/iv_commodity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:contentDescription="@string/hello_world"
+        android:scaleType="fitXY"
+        android:src="@drawable/temp" />
+	<!-- 商品描述 -->
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/hello_world"
+        android:textColor="#000"
+        android:textSize="20sp" />
+	<!-- 商品价格 -->
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/hello_world"
+        android:textColor="#f00" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+	<!-- 加入购物车按钮 -->
+    <Button
+        android:id="@+id/btn_add_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/btn_toggle"
+        android:text="@string/add_cart"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+	<!-- 头像 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/hello_world"
+        android:scaleType="center"
+        android:src="@drawable/personal" />
+	<!-- 用户名输入框 -->
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/input"
+        android:gravity="center_vertical"
+        android:hint="@string/user_hint"
+        android:text="admin"
+        android:textSize="16sp" />
+	<!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/input"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:hint="@string/password_hint"
+        android:text="123456"
+        android:textSize="16sp" />
+	<!-- 登录按钮 -->
+    <Button
+        android:id="@+id/login_submit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/login_btn_toggle"
+        android:gravity="center"
+        android:text="@string/btn_login"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

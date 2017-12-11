@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    android:orientation="vertical" >
+	<!-- 头像 -->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/user" />
+	<!-- 个人中心菜单 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:weightSum="3" >
+		<!-- 待支付 -->
+        <TextView
+            style="@style/txtColor"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/payment"
+            android:gravity="center"
+            android:text="@string/payment" />
+		<!-- 待收货 -->
+        <TextView
+            style="@style/txtColor"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/received"
+            android:gravity="center"
+            android:text="@string/received" />
+		<!-- 全部订单-->
+        <TextView
+            style="@style/txtColor"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/order"
+            android:gravity="center"
+            android:text="@string/order" />
+    </LinearLayout>
+	<!-- 地址管理 -->
+    <TextView
+        style="@style/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:drawableEnd="@drawable/more"
+        android:gravity="start|center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/address"
+        android:textSize="16sp" />
+	<!-- 设置 -->
+    <TextView
+        style="@style/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFF"
+        android:drawableEnd="@drawable/more"
+        android:gravity="start|center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/setting"
+        android:textSize="16sp" />
+	<!-- 关于我们 -->
+    <TextView
+        android:id="@+id/aboutUs"
+        style="@style/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFF"
+        android:drawableEnd="@drawable/more"
+        android:gravity="start|center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/about"
+        android:textSize="16sp" />
+
+</LinearLayout>

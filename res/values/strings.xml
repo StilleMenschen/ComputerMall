@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GD电脑城</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="home">主页</string>
+    <string name="classify">分类</string>
+    <string name="cart">购物车</string>
+    <string name="add_cart">加入购物车</string>
+    <string name="mine">我的</string>
+    <string name="hint1">"笔记本电脑 i7 8代"</string>
+    <string name="search">搜索</string>
+    <string name="payment">待支付</string>
+    <string name="received">待收货</string>
+    <string name="order">全部订单</string>
+    <string name="setting">设置</string>
+    <string name="address">地址管理</string>
+    <string name="about">关于我们</string>
+    <string name="logined">点击登陆</string>
+    <string name="avatar">这是一个头像</string>
+    <string name="scqr">扫一扫</string>
+    <string name="msg">消息</string>
+    <string name="user_hint">用户名</string>
+    <string name="password_hint">密码</string>
+    <string name="btn_login">登\u0020\u0020录</string>
+    <string name="commodity_details">商品详情</string>
+    <string name="pay">购买</string>
+
+</resources>

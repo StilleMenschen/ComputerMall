@@ -1,0 +1,60 @@
+<!-- 主界面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <!-- 装载Fragment页面的控件 -->
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Line" >
+    </FrameLayout>
+    <!-- 一根灰色的线 -->
+    <View
+        android:id="@+id/Line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/rg_select"
+        android:background="#9e9e9e" />
+	<!-- 主页面下方菜单按钮组 -->
+    <RadioGroup
+        android:id="@+id/rg_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+		<!-- 主页按钮 -->
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/RadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/radiobutton_home"
+            android:text="@string/home" />
+		<!-- 分类按钮 -->
+        <RadioButton
+            android:id="@+id/rb_classify"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/radiobutton_classify"
+            android:text="@string/classify" />
+		<!-- 购物车按钮 -->
+        <RadioButton
+            android:id="@+id/rb_cart"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/radiobutton_shopping_car"
+            android:text="@string/cart" />
+		<!-- 个人中心按钮 -->
+        <RadioButton
+            android:id="@+id/rb_mine"
+            style="@style/RadioButtonStyle"
+            android:drawableTop="@drawable/radiobutton_mine"
+            android:text="@string/mine" />
+    </RadioGroup>
+
+</RelativeLayout>

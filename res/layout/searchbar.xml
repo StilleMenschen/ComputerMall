@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+	<!-- 扫一扫 -->
+    <TextView
+        android:id="@+id/tv_scqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableTop="@drawable/scanning"
+        android:text="@string/scqr"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:textSize="12sp" />
+	<!-- 搜索框 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:background="@drawable/shape"
+        android:drawableStart="@drawable/search_32px"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:text="@string/hint1"
+        android:textSize="12sp" >
+    </TextView>
+	<!-- 消息 -->
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/tv_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableTop="@drawable/comments"
+        android:text="@string/msg"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+    <requestFocus />
+
+</LinearLayout>
